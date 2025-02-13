@@ -1,0 +1,28 @@
+{
+  "name": "firebase-auth",
+  "version": "1.0.0",
+  "main": "bin/server.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch bin/server.ts",
+    "build": "tsup",
+    "start": "node ./dist/bin/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase-admin": "^13.1.0",
+    "tsup": "^8.3.6",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.1",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

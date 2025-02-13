@@ -1,0 +1,21 @@
+version: "3.4"
+
+services:
+  firebase-auth:
+    image: firebase-auth
+    container_name: firebase-auth
+    build: .
+    env_file:
+      - .env
+    command: npm run dev
+    environment:
+      - apiKey=$apiKey
+      - authDomain=$authDomain
+      - projectId=$projectId
+      - storageBucket=$storageBucket
+      - messagingSenderId=$messagingSenderId
+      - appId=$appId
+      - measurementId=$measurementId
+      - PORT=$PORT
+    ports:
+      - $PORT:$PORT

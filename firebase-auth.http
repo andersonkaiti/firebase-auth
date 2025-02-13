@@ -1,0 +1,26 @@
+POST http://localhost:3000/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "anderkaiti@gmail.com",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:3000/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "anderkaiti@gmail.com",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:3000/auth HTTP/1.1
+Content-Type: application/json
+
+{
+    "token": ""
+}
